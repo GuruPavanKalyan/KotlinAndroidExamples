@@ -1,0 +1,2 @@
+rootProject.name='DiceAssignment'
+include ':app'
