@@ -5,64 +5,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:padding="10dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textview"
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Result"
-        android:textColor="#673AB7"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:layout_height="1dp"
+        android:background="#2196F3"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:orientation="horizontal">
-
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#2196F3"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your Score"
+                android:textColor="#06A809"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Result"
+                android:textColor="#673AB7"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/dice_1" />
 
             <Button
-                android:id="@+id/roll"
+                android:id="@+id/playerone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:onClick="roll"
-                android:text="roll" />
+                android:text="Player-1" />
         </LinearLayout>
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#2196F3"/>
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your Score"
+                android:textColor="#06A809"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Result"
+                android:textColor="#673AB7"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
 
             <ImageView
                 android:id="@+id/imageview1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/dice_1" />
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/playertwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:onClick="upCount"
-                android:text="upcount" />
+                android:text="Player-2" />
 
         </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#2196F3"/>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="#2196F3"/>
 </LinearLayout>

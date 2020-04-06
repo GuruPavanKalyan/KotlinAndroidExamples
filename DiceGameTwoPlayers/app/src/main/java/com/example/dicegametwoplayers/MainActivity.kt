@@ -21,13 +21,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        img = findViewById(R.id.imageview)
+       /* img = findViewById(R.id.imageview)
         img1 = findViewById(R.id.imageview1)
-        tv = findViewById(R.id.textview)
+        tv = findViewById(R.id.textview)*/
     }
 
 
-    @SuppressLint("SetTextI18n")
+   /* @SuppressLint("SetTextI18n")
     fun roll(view: View) {
         r = (1..6).random()
         r1 = (1..6).random()
@@ -77,6 +77,6 @@ class MainActivity : AppCompatActivity() {
                 img1.setImageResource(R.drawable.empty_dice)
             }
         }
-    }
+    }*/
 
 }
