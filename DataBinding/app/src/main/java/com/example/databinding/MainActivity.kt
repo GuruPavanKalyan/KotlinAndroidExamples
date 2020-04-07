@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setName() {
+        // for getting text from the edittext
         val n = databinding.name.text.toString()
 
         //databinding.displayname.setText(n)

@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             img.setImageResource(R.drawable.dice_1)
             img1.setImageResource(R.drawable.dice_1)
         } else if ((r < 6) and (r1 < 6)) {
+
             r++
             r1++
             tv.text = r.toString() + " = " + r1.toString()
