@@ -30,9 +30,9 @@ class MainActivity : AppCompatActivity() {
     fun roll(view: View) {
         r = (1..6).random()
         r1 = (1..6).random()
-        displayDice1(r1)
-        displayDice(r)
 
+        displayDice(r)
+        displayDice1(r1)
         tv.text = r.toString()+" = "+r1.toString()
     }
 
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayDice(r: Int) {
-        when(r1){
+        when(r){
             1 -> img.setImageResource(R.drawable.dice_1)
             2 -> img.setImageResource(R.drawable.dice_2)
             3 -> img.setImageResource(R.drawable.dice_3)
