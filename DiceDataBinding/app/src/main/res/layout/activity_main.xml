@@ -68,6 +68,9 @@
                     android:text="upcount" />
 
             </LinearLayout>
+
         </LinearLayout>
+
+
     </LinearLayout>
 </layout>
