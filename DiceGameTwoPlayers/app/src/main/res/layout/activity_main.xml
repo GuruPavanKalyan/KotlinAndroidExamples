@@ -42,7 +42,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textview2"
+                android:id="@+id/result1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -64,6 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:onClick="player1_roll"
                 android:text="Player-1" />
         </LinearLayout>
 
@@ -89,7 +90,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textview1"
+                android:id="@+id/result2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -112,6 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:onClick="player2_roll"
                 android:text="Player-2" />
 
         </LinearLayout>

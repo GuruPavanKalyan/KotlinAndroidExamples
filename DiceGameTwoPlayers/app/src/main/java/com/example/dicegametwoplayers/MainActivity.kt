@@ -13,30 +13,45 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var img: ImageView
     lateinit var img1: ImageView
-    var r: Int = 0
     var r1: Int = 0
-    lateinit var tv: TextView
+    var r2: Int = 0
+    lateinit var p1_tv : TextView
+    lateinit var p2_tv : TextView
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
        /* img = findViewById(R.id.imageview)
-        img1 = findViewById(R.id.imageview1)
-        tv = findViewById(R.id.textview)*/
+        img1 = findViewById(R.id.imageview1)*/
+        p1_tv = findViewById(R.id.result1)
+        p2_tv = findViewById(R.id.result2)
     }
 
 
-   /* @SuppressLint("SetTextI18n")
-    fun roll(view: View) {
-        r = (1..6).random()
+    @SuppressLint("SetTextI18n")
+    fun player1_roll(view: View) {
         r1 = (1..6).random()
-        displayDice1(r1)
-        displayDice(r)
 
-        tv.text = r.toString()+" = "+r1.toString()
+        displayDice1(r1)
+
+
+        p1_tv.text = r1.toString()
     }
 
+    @SuppressLint("SetTextI18n")
+    fun player2_roll(view: View) {
+
+        r2 = (1..6).random()
+
+        displayDice2(r2)
+
+        p2_tv.text = r2.toString()
+    }
+
+
+    /*
     @SuppressLint("SetTextI18n")
     fun upCount(view: View) {
         if ((r == 0) and (r1 == 0)) {
@@ -49,9 +64,9 @@ class MainActivity : AppCompatActivity() {
             displayDice1(r1)
             displayDice(r)
         }
-    }
+    }*/
 
-    private fun displayDice(r: Int) {
+    private fun displayDice1(r1: Int) {
         when(r1){
             1 -> img.setImageResource(R.drawable.dice_1)
             2 -> img.setImageResource(R.drawable.dice_2)
@@ -65,8 +80,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun displayDice1(r1: Int) {
-        when(r1) {
+    private fun displayDice2(r2: Int) {
+        when(r2) {
             1 -> img1.setImageResource(R.drawable.dice_1)
             2 -> img1.setImageResource(R.drawable.dice_2)
             3 -> img1.setImageResource(R.drawable.dice_3)
@@ -77,6 +92,6 @@ class MainActivity : AppCompatActivity() {
                 img1.setImageResource(R.drawable.empty_dice)
             }
         }
-    }*/
+    }
 
 }
